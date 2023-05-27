@@ -1,0 +1,50 @@
+.Desktop {
+    background-color: black;
+    color: white;
+    height: 10vh;
+    width: 98,5vw;
+    display: flex;
+    justify-content: space-between;
+}
+h2 {
+    font-weight: 800;
+    padding-left: 3vw;
+    align-items: center;
+}
+.List {
+    display:flex;
+    width: 40vw;
+    justify-content: space-around;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+.Mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .Desktop {
+        display: none;
+    }
+    .Mobile {
+        display: flex;
+    }
+    .ContainerMobile {
+        background-color: black;
+        color: white;
+        height: 8vh;
+        width: 100vw;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .Burguer {
+        height: 100vh;
+        background-color: black;
+    }
+
+}
+

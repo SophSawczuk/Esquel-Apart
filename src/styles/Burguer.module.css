@@ -1,0 +1,14 @@
+.Container {
+    background-color: black;
+    color: white;
+    height: 30vh;
+    width: 100vw;
+    position: absolute;
+    margin-top: 38vh;
+    text-align: center;
+    z-index: 50;
+}
+
+.Container h5 {
+    padding: 0.4em 0 0.4em 0;
+}
