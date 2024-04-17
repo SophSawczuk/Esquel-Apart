@@ -51,6 +51,7 @@
 
     .Card h3 {
         margin: 0.3em 0 0.3em 0;
+        font-size: small;
     }
 
     .Imagen {
@@ -62,3 +63,9 @@
         filter: brightness(40%); 
     }
 }
+/* 
+@media (max-width: 840px) {
+    .Card p {
+        font-size: small;
+    }
+} */

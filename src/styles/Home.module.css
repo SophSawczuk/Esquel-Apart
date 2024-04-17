@@ -240,3 +240,7 @@ button h5 {
         right: 0.5em;
     }
 }
+
+@media (max-height: 780px) {
+    
+}

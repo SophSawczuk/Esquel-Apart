@@ -56,3 +56,10 @@
         font-size: small;
     }
 }
+
+@media (max-height: 780px) {
+    .Wrapper {
+        height: 50vh;
+        margin-top: 2vh;
+    }
+}

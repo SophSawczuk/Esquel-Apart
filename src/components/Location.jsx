@@ -33,6 +33,7 @@ export default function Location() {
       const newHeight = window.innerWidth >= 768 ? "70vh" : "100vh"
       setMapHeight(newHeight)
     };
+    handleResize()
 
     // Agrega un event listener para detectar cambios en el tamaño de la ventana
     window.addEventListener("resize", handleResize);

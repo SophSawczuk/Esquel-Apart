@@ -39,3 +39,9 @@
     }
     
 }
+
+@media (max-height: 780px) {
+    .FirstCard h3{
+        font-size: small;
+    }
+}

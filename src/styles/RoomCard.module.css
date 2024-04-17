@@ -171,6 +171,7 @@ dialog {
     .Modal {
         width: 90vw;
         display: inline-block;
+        height: 90%;
     }
 
     .ImageModal {
@@ -180,7 +181,7 @@ dialog {
 
     .CloseBtn {
         position: absolute;
-        top: 10vh;
+        top: 5vh;
         right: 1em;
     }
 
@@ -201,5 +202,11 @@ dialog {
     .ArrowFoward {
         margin-top: 16vh;
         right: 0.5em;
+    }
+}
+
+@media (max-height: 840px) {
+    .Modal {
+        height: 100%;
     }
 }
