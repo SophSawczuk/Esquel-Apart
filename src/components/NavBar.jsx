@@ -11,13 +11,13 @@ export default function NavBar() {
     const navigate = useNavigate();
 
     const menuClosed = <AiOutlineMenu
-                    style={{"color": "white", "padding-right": "5vw", "width": "1.5em", "height":"1.5em"}}
+                    style={{"color": "white", paddingRight: "5vw", "width": "1.5em", "height":"1.5em"}}
                     onClick={() => setOpen(!open)}
                 />
     const menuOpen = 
             <div>
               <AiOutlineMenu
-                style={{"color": "white", "padding-right": "5vw", "width": "1.5em", "height":"1.5em"}}
+                style={{"color": "white", paddingRight: "5vw", "width": "1.5em", "height":"1.5em"}}
                 onClick={() => setOpen(!open)}
                 />
                 
@@ -41,7 +41,6 @@ export default function NavBar() {
             <div className={style.Mobile}>
                 <div className={style.ContainerMobile}>
                     <h2 onClick={(e) => {navigate("/"); closeMenuWithLogo(e)}}>Logo</h2>
-                    {console.log(open)}
                     {open ? menuOpen : menuClosed}
                     {open && <Burguer setOpen={setOpen}/> }
                 </div>

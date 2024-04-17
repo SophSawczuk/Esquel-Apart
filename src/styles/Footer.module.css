@@ -1,0 +1,58 @@
+.Wrapper {
+    height: 40vh;
+    background-color: black;
+    color:white;
+    font-size: small;
+    margin-top: 10vh;
+    padding-top: 10vh;
+}
+
+.Wrapper hr {
+    width: 80vw;
+    
+}
+
+.WrapperList {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.WrapperList p {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.WrapperList :hover {
+    color: grey;
+}
+
+.Copyright {
+    margin-top: 20vh;
+    display: flex;
+    justify-content: end;
+    margin-right: 10vw;
+}
+
+
+@media (max-width: 768px) {
+    .Wrapper {
+        margin-top: 0;
+        padding-top: 5vh;
+        height: 40vh;
+    }
+    .WrapperList {
+        width: 100vw;
+        display: inline-block;
+    }
+
+    .WrapperList p {
+       margin-bottom: 1.5em; 
+    }
+
+    .Copyright {
+        margin-top: 8vh;
+        font-size: small;
+    }
+}

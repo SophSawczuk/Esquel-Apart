@@ -1,9 +1,14 @@
 .Container {
     width: 100vw;
     display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5vh; 
+   justify-items: center;
 }
 
 .Card {
+    position:relative;
     width: 20vw;
     height: 20vh;
     background-color: white;
@@ -18,4 +23,42 @@
 .Icon {
     width: 2em;
     height: 2em;
+}
+
+.Imagen {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .Container {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        /* grid-gap: 3vh; */
+        column-gap: 0;
+        row-gap: 3vh;
+    }
+
+    .Title {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .Card {
+        width: 40vw;
+        height: 10vh;
+        margin-top: 0;
+    }
+
+    .Card h3 {
+        margin: 0.3em 0 0.3em 0;
+    }
+
+    .Imagen {
+        display:flex;
+        height: 25vh;
+        width: 100%;
+        object-fit: cover;
+        margin-top: 5vh;
+        filter: brightness(40%); 
+    }
 }

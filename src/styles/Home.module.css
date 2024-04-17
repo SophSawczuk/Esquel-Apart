@@ -38,7 +38,7 @@
 }
 
 button {
-    display: inline-block;
+    display: flex;
 	font-weight: 400;
 	color: #212529;
 	text-align: center;
@@ -51,8 +51,14 @@ button {
 	background-color: #318100;
     margin-top: 5vh;
 }
+.ButtonAvailability {
+    display: flex;
+    margin-top: 0.5em;
+}
 button h5 {
     margin: 0.5em;
+    align-items: flex-end;
+
 }
 
 @supports(object-fit: cover){
@@ -130,6 +136,7 @@ button h5 {
     padding-right: 1vw;
     width: 46vw;
     height: 45vh;
+    cursor: pointer;
 }
 
 .Columna2 {
@@ -139,6 +146,31 @@ button h5 {
 .Columna2 img{
     width: 46vw;
     height: 90vh;
+    cursor: pointer;
+}
+
+/* MODAL */
+.ModalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    z-index: 9999; /* Asegura que esté por encima del resto del contenido */
+
+}
+
+.CloseModalBtn {
+    position:absolute;
+   top: 1em;
+   right: 1em;
+   font-size: 3em;
+   color: white;
+   cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -163,5 +195,48 @@ button h5 {
         position: absolute;
         z-index: 50;
         margin:6vh 0 0 25vw;
+    }
+
+    .ImageTwo {
+        height: 25vh;
+    }
+
+    .SecondBlock h2 {
+        margin-left: 0.5em;
+    }
+
+    .ComodidadesButton {
+        margin-left: 36vw;
+    }
+
+    .ThirdBlock {
+        margin-top: 15vh;
+        height: 188vh;
+    }
+
+    .Fotos {
+        display: inline-block;
+    }
+
+    .Columna1 {
+        width: 100%;
+    }
+
+    .Columna1 img {
+        width: 94vw;
+    }
+
+    .Columna2 {
+        width: 100%;
+    }
+
+    .Columna2 img {
+        width: 94vw;
+        padding-left: 3vw;
+    }
+
+    .CloseModalBtn {
+        top: 0.5em;
+        right: 0.5em;
     }
 }

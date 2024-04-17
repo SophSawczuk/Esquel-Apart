@@ -1,0 +1,150 @@
+.Title {
+    margin-left: 1.7em;
+    margin-top: 7vh;
+}
+
+.WrapperContact{
+    display: flex;
+    margin-bottom: 20vh;
+
+}
+
+.ContactContainer {
+    width: 50%;
+}
+
+.WrapperContact form {
+   
+}
+
+.Input {
+   display: block;
+    margin-top: 0.6em;
+    margin-left: 2em;
+    border-collapse: collapse;
+    width: 45vw;
+}
+
+
+.Input input {
+    width: 45vw;
+    height: 3em;
+    background-color: #F2F2F2;
+    border-style: none;
+    margin-top: 0.6em;
+    padding-left: 1em;
+    color: #6B6B6B;
+    font-family:'Montserrat', sans-serif;
+}
+
+.MessageInput {
+    height: 6em !important;
+    width: 45vw;
+    background-color: #F2F2F2;
+    border-style: none;
+    margin-top: 0.6em;
+    padding-left: 1em;
+    color: #6B6B6B;
+    font-family:'Montserrat', sans-serif;
+    padding-top: 1em;
+
+}
+
+
+.Errors {
+    color: red;
+    font-size: small;
+}
+
+
+.Input span {
+    width: 45vw;
+}
+
+.SubmitButton {
+    background-color: black;
+    width: 46vw;
+    border-radius: 0%;
+    margin-left: 2.5em;
+    justify-content: center;
+    font-size: small;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.WrapperContactInfo {
+    display: inline-block;
+    margin-left: 3em;
+    margin-top: 5vh;
+}
+
+.WrapperIcons {
+    display: inline-block;
+    width: 90%;
+}
+
+.Block {
+    display: flex;
+    color: white;
+    background-color: black;
+    margin-bottom: 1em;
+    padding: 1em 0 1em 2em;
+    font-size: small;
+    align-items: center;
+    box-shadow: 2px 2px 3px rgb(104, 104, 104);
+}
+
+.Icon {
+    font-size: x-large;
+    padding-right: 0.5em;
+}
+
+.Reminder {
+    width: 80%;
+    margin-top: 5vh;
+    font-style: italic;
+    color: #6B6B6B;
+}
+
+
+@media (max-width: 768px) { 
+    .Title {
+        margin-top: 5vh;
+    }
+
+    .WrapperContact {
+        display: inline-block;
+    }
+
+    .Input input {
+        width: 80vw;
+    }
+
+    .MessageInput {
+        width: 80vw;
+    }
+
+    .SubmitButton {
+        margin-top: 1em;
+        width: 83vw;
+    }
+
+    .ContactContainer {
+        width: 100%;
+    }
+
+    .WrapperContactInfo {
+        width: 100%;
+        margin-top: 33vh;
+        margin-left: 2em;
+        width: 90vw;
+    }
+
+    .Reminder {
+        position: absolute;
+        top: 67vh;
+    }
+}

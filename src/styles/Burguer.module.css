@@ -1,10 +1,10 @@
 .Container {
     background-color: black;
     color: white;
-    height: 30vh;
+    height: 40vh;
     width: 100vw;
     position: absolute;
-    margin-top: 38vh;
+    margin-top: 45vh;
     text-align: center;
     z-index: 50;
 }

@@ -18,3 +18,24 @@
     width: 2em;
     height: 2em;
 }
+
+@media (max-width: 768px) {
+    .Container {
+        display: grid;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 3vh;
+        margin-left: 1.5em;
+    }
+    .FirstCard {
+        width: 40vw;
+        height: 10vh;
+        margin-top: 0;
+    }
+
+    .FirstCard h3 {
+        margin-top: 0;
+        margin-bottom: 0.5em;
+    }
+    
+}

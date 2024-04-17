@@ -7,8 +7,25 @@ import ComodidadesHome from "../assets/ComodidadesHome.jsx"
 import foto1 from "../images/Foto1.jpg"
 import foto2 from "../images/Foto2.jpg"
 import foto3 from "../images/Foto3.jpg"
+import React, { useState } from 'react';
+import { RxCross1 } from "react-icons/rx";
 
 export default function Home() {
+    const [modalOpen, setModalOpen] = useState(false);
+    const [pic, setPic] = useState()
+
+    const openModal = (picture) => {
+        setPic(picture)
+        setModalOpen(true);
+
+    };
+
+    const closeModal = () => {
+        setModalOpen(false);
+    };
+
+   
+
     return(
         <div className={style.Container}>
             <div className={style.BlockOne}>
@@ -41,8 +58,9 @@ export default function Home() {
                         <p>Aire acondicionado</p>
                     </div>
                 </div>
-
-                <button><Link to="/contact"><h5>Consultar disponibilidad</h5></Link></button>
+                <div className={style.ButtonAvailability}>
+                    <button><Link to="/contact" ><h5>Consultar disponibilidad</h5></Link></button>
+                </div>
             </div>
             <div >
                 <img src={homeImg} alt="Vista de la laguna La Zeta, Esquel." className={style.Image}/>
@@ -60,14 +78,21 @@ export default function Home() {
                 <h2>Fotos</h2>
                 <div className={style.Fotos}>
                     <div className={style.Columna1}>
-                        <img src={foto2}/>
-                        <img src={foto3}/>
+                        <img src={foto2} onClick={() => {openModal(foto2)}}/>
+                        <img src={foto3} onClick={() => {openModal(foto3)}}/>
                     </div>
                     <div className={style.Columna2}>
-                        <img src={foto1}/>
+                        <img src={foto1} onClick={() => {openModal(foto1)}}/>
                     </div>
                 </div>
             </div>
+            {modalOpen && (
+                <div className={style.ModalOverlay}>
+                    <RxCross1 onClick={() => {closeModal()}} className={style.CloseModalBtn}/>
+                    <img src={pic}/>
+                    
+                </div>
+            )}
         </div>
     )
 }

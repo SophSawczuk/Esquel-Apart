@@ -1,0 +1,51 @@
+.Container {
+    position: relative;
+}
+
+.WrapperInfo{
+    position: absolute;
+    width: 26vw;
+    height: 80vh;
+    background-color: black;
+    color: white;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    text-align: start;
+    padding-left: 2em;
+    padding-right: 2em;
+    z-index: 3;
+    transform: translateY(-12%);
+}
+
+.WrapperInfo p {
+    margin-top: 2em;
+    font-size: small;
+}
+
+.WrapperInfo h3 {
+    margin-top: 0;
+}
+.WrapperMap {
+    margin-left: 35vw;
+    margin-top: 10vh;
+}
+
+@media (max-width: 768px) {
+    .WrapperMap {
+        margin-top: 0;
+        margin-left: 0;
+        width: 100% !important;
+    }
+
+    .WrapperInfo {
+        height: 60vh;
+        margin-top: 20vh;
+        margin-left: 0;
+        padding-left: 1em;
+        width: 30vw;
+    }
+}
