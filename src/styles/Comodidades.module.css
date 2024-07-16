@@ -1,21 +1,28 @@
+.Wrapper {
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+}
 .Container {
-    width: 100vw;
+    width: auto;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5vh; 
    justify-items: center;
 }
+.Title {
+    margin-left: 2em;
+}
 
 .Card {
     position:relative;
-    width: 20vw;
+    width: 25vw;
     height: 20vh;
     background-color: white;
     display: block;
     text-align: center;
     padding: 1.5em 0 1.5em 0;
-    border-radius: 5%;
+    border-radius: 5px;
     box-shadow: 2px 4px 7px 3px rgba(0,0,0,0.25);
     margin-top: 4vh;
 }
@@ -30,6 +37,9 @@
 }
 
 @media (max-width: 768px) {
+    .Wrapper {
+        margin-bottom: 0;
+    }
     .Container {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -45,6 +55,7 @@
 
     .Card {
         width: 40vw;
+        min-width: 100px;
         height: 10vh;
         margin-top: 0;
     }
@@ -54,6 +65,14 @@
         font-size: small;
     }
 
+    .Card p {
+        font-size: small;
+    }
+
+    .Icon {
+        width: 1.5em;
+        height: 1.5em;
+    }
     .Imagen {
         display:flex;
         height: 25vh;
@@ -62,10 +81,13 @@
         margin-top: 5vh;
         filter: brightness(40%); 
     }
+
 }
-/* 
-@media (max-width: 840px) {
-    .Card p {
-        font-size: small;
+@media (900px > width > 769px) {
+    .Container {
+        grid-template-columns: 1fr 1fr; 
     }
-} */
+    .Card {
+        width: 40vw;
+    }
+}

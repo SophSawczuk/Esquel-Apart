@@ -1,6 +1,6 @@
 .Title {
     margin-left: 1.7em;
-    margin-top: 7vh;
+    margin-top: 15vh;
 }
 
 .WrapperContact{
@@ -13,9 +13,7 @@
     width: 50%;
 }
 
-.WrapperContact form {
-   
-}
+
 
 .Input {
    display: block;
@@ -112,19 +110,24 @@
 
 @media (max-width: 768px) { 
     .Title {
-        margin-top: 5vh;
+        margin-top: 15vh;
     }
 
     .WrapperContact {
         display: inline-block;
     }
+    .Input {
+        margin-left: 2em;
+        width: 90vw;
+    }
 
     .Input input {
-        width: 80vw;
+        width: calc(100% - 3em);
     }
 
     .MessageInput {
-        width: 80vw;
+        width: calc(90vw - 3em);
+        
     }
 
     .SubmitButton {
@@ -138,13 +141,14 @@
 
     .WrapperContactInfo {
         width: 100%;
-        margin-top: 33vh;
+        margin-top: 25vh;
         margin-left: 2em;
         width: 90vw;
     }
 
     .Reminder {
         position: absolute;
-        top: 67vh;
+        top: 72vh;
+        /* margin-top: 0; */
     }
 }

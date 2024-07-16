@@ -1,9 +1,9 @@
 .ContainerRoomCard{
     height: 50vh;
-    width: 25vw;
+    width: 25vw; 
     background-color: white;
     display: block;
-    box-shadow: 0px 0px 80px rgb(153, 153, 153);
+    box-shadow: 0px 10px 40px rgb(153, 153, 153);
     cursor: pointer;
 }
 
@@ -46,10 +46,14 @@ dialog {
     width: 70vw;
     height: 80vh;
 }
+/* .WrapperArrows {
+    display: flex;
+    align-items: center;
+} */
 
 .ArrowBack {
-    position: absolute;
-    margin-top:38vh;
+   position: absolute;
+    margin-top:48vh;
     margin-left: 0.5em;
     color: rgba(255, 255, 255, 0.3);
     font-size:xx-large;
@@ -58,8 +62,9 @@ dialog {
 
 .ArrowFoward {
     position: absolute;
-    margin-top:38vh;
-    margin-left: 30vw;
+    margin-top:48vh;
+    /* margin-left: 37%; */
+    right: 50vw;
     color: rgba(255, 255, 255, 0.3);
     font-size:xx-large;
     cursor: pointer;
@@ -85,7 +90,7 @@ dialog {
     display: flex;
     height: 80%;
     background-color: white;
-    width: 70%; /* Ancho del modal */
+    width: 80%; /* Ancho del modal */
 
     
 }
@@ -195,18 +200,27 @@ dialog {
     }
 
     .ArrowBack {
-        margin-top: 16vh;
-        left: 0.5em;
+        margin-top: 18vh;
+        left: 4vw;
     }
 
     .ArrowFoward {
-        margin-top: 16vh;
-        right: 0.5em;
+        margin-top: 18vh;
+        right: 5vw;
     }
 }
 
 @media (max-height: 840px) {
     .Modal {
         height: 100%;
+    }
+}
+
+@media (1200px > width > 769px) {
+    .ContainerRoomCard {
+        width: 100%;
+    }
+    .Modal {
+        width: 80%;
     }
 }

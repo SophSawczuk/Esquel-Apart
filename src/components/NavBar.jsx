@@ -11,13 +11,13 @@ export default function NavBar() {
     const navigate = useNavigate();
 
     const menuClosed = <AiOutlineMenu
-                    style={{"color": "white", paddingRight: "5vw", "width": "1.5em", "height":"1.5em"}}
+                    style={{"color": "white", paddingRight: "5vw", "width": "1.5em", "height":"1.5em", marginTop: "3vh"}}
                     onClick={() => setOpen(!open)}
                 />
     const menuOpen = 
             <div>
               <AiOutlineMenu
-                style={{"color": "white", paddingRight: "5vw", "width": "1.5em", "height":"1.5em"}}
+                style={{"color": "white", paddingRight: "5vw", "width": "1.5em", "height":"1.5em", "alignSelf":"center", marginTop: "3vh"}}
                 onClick={() => setOpen(!open)}
                 />
                 
@@ -31,17 +31,19 @@ export default function NavBar() {
         <div className={style.Container}>
             <div className={style.Desktop}>
                 <Link to="/"><h2>Logo</h2></Link>
-                <div className={style.List}>
-                    <Link to="/rooms"><h5>Habitaciones</h5></Link>
-                    <Link to="/amenities"><h5>Comodidades</h5></Link>
-                    <Link to="/location"><h5>Cómo llegar</h5></Link>
-                    <Link to="/contact"><h5>Contacto</h5></Link>
-                </div>
+                <ol className={style.List}>
+                    <Link to="/rooms"><li>Habitaciones</li></Link>
+                    <Link to="/amenities"><li>Comodidades</li></Link>
+                    <Link to="/location"><li>Cómo llegar</li></Link>
+                    <Link to="/contact"><li>Contacto</li></Link>
+                </ol>
             </div>
             <div className={style.Mobile}>
                 <div className={style.ContainerMobile}>
-                    <h2 onClick={(e) => {navigate("/"); closeMenuWithLogo(e)}}>Logo</h2>
-                    {open ? menuOpen : menuClosed}
+                    <div className={style.LogosWrapper}>
+                        <h2 onClick={(e) => {navigate("/"); closeMenuWithLogo(e)}}>Logo</h2>
+                        {open ? menuOpen : menuClosed}
+                    </div>
                     {open && <Burguer setOpen={setOpen}/> }
                 </div>
                 

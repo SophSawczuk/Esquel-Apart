@@ -1,12 +1,12 @@
 .Container {
     background-color: black;
     color: white;
-    height: 40vh;
+    height: min-content;
     width: 100vw;
     position: absolute;
-    margin-top: 45vh;
+   /*  margin-top: 45vh; */
     text-align: center;
-    z-index: 50;
+    z-index: 3;
 }
 
 .Container h5 {

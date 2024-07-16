@@ -4,8 +4,8 @@ import foto2 from "../images/Foto2.jpg"
 
 export default function Comodidades() {
     return(
-        <div>
-            <h2 className={style.Title}>Comodidades</h2>
+        <div className={style.Wrapper}>
+            <h3 className={style.Title}>Comodidades</h3>
             <div className={style.Container}>
                 <div className={style.Card}>
                     <AiOutlineWifi className={style.Icon}/>

@@ -14,6 +14,8 @@ export default function Contact() {
     })
 
     const [errors, setErrors] = useState({})
+    const [errorMessage, setErrorMessage] = useState({})
+    
 
     function handleChange(e) {
         setInput({
@@ -29,12 +31,15 @@ export default function Contact() {
     function handleSubmit(e) {
         e.preventDefault()
         if(errors.name === "Se requiere un nombre" || errors.name === "El nombre debe tener al menos 4 caracteres" || errors.email === "Se requiere un email" || errors.email === "Ingrese un email válido" || errors.message === "Ingrese un mensaje con más de 50 caracteres") {
+            setErrorMessage(true)
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
                 text: 'Faltan completar campos',
             }) 
+           
         } else if(input.name === "" && input.email === "" && input.message === "") {
+            
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
@@ -83,7 +88,7 @@ export default function Contact() {
 
 
 
-
+   
 
     return(
         <div>
@@ -91,31 +96,26 @@ export default function Contact() {
             <div className={style.WrapperContact}>
                 <form onSubmit={e => handleSubmit(e)} className={style.ContactContainer}>
                     <div className={style.Input}>
-                        <span>Nombre y apellido</span>
-                        
+                        <span>Nombre y apellido</span>                       
                             <input type="text" id="name" name="name" value={input.name} placeholder="Juan Perez..." onChange={e => handleChange(e)}/>
-                            {errors.name && (
+                            {errorMessage === true && (
                                 <p className={style.Errors}>{errors.name}</p>
-                            )}
-                        
+                            )
+                           }                        
                     </div>
                     <div className={style.Input}>
-                        <span>Correo electrónico</span>
-                        
+                        <span>Correo electrónico</span>                        
                             <input type="email" id="email" name="email"  value={input.email} placeholder="juanperez@gmail.com..." onChange={(e) => handleChange(e)}/>
-                            {errors.email && (
+                            {errorMessage === true && errors.email && (
                                 <p className={style.Errors}>{errors.email}</p>
-                            )}
-                     
+                            )}         
                     </div>
                     <div className={style.Input}>
-                        <span>Tu consulta</span>
-                        
+                        <span>Tu consulta</span>     
                             <textarea type="text" id="message" name="message" value={input.message} placeholder="Escribe aquí tu mensaje..." onChange={(e) => handleChange(e)} className={style.MessageInput}/>
-                            {errors.message && (
+                            {errorMessage === true && errors.message && (
                                 <p className={style.Errors}>{errors.message}</p>
-                            )}
-                   
+                            )}      
                     </div>
                     <button type="submit" className={style.SubmitButton}>Enviar</button>
                 </form>

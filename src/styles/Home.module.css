@@ -1,6 +1,7 @@
 .BlockOne {
     display: flex;
     height: 90vh;
+    padding-top: 10vh;
 }
 
 .Content {
@@ -83,6 +84,7 @@ button h5 {
         height: 100%;
       object-fit: cover;
       object-position: center bottom;
+      width: auto;
     }
 }
 
@@ -129,13 +131,14 @@ button h5 {
 
 .Columna1 {
     width: 50vw;
+    height: 90vh;
 }
 
 .Columna1 img {
     padding-left: 3vw;
-    padding-right: 1vw;
+    padding-right: 4px;
     width: 46vw;
-    height: 45vh;
+    height: 44.8vh;
     cursor: pointer;
 }
 
@@ -176,41 +179,74 @@ button h5 {
 @media (max-width: 768px) {
     .BlockOne {
         display: block;
+        padding-top: 9vh;
     }
     .Content {
         position: absolute;
-        z-index: 25;
-        padding: 0vh 5vw 10vh 5vw;
+       /*  z-index: 25; */
+        padding: 0vh 0 10vh 5%;
         margin-top: 8vh;
-        width: 80vw;
-        background-color: rgb(255, 255, 255, 0.75);
+        /* width: auto; */
+        width: 90%;
+        height: auto;
+    }
+    .LightFont {
+        color: white;
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .Subtitle {
+        /* color: #292929; */
+        color: rgb(30, 30, 30);
+    }
+
+    .ContainerList {
+        width: auto;
+        background-color: #000000;
+        border-radius: 20px;
+        padding: 1.5rem 2rem 1.5rem 2rem;
+        color: white;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25) ;
+    }
+    
+    .Checklist p {
+        font-size: small;
+        padding-bottom: 1em;
     }
     .Image {
         position: absolute;
-        width: 100vw;
-        filter: brightness(75%);
+        width: 100%;
+        overflow: hidden;
+        object-fit: cover;
+        height: 90vh;
+        z-index: -1;
     }
 
     button {
-        position: absolute;
-        z-index: 50;
-        margin:6vh 0 0 25vw;
+        width: 100%;
+       margin-top: 0;
+       border-radius: 10px;
+       text-align: center;
+       justify-content: center;
     }
 
     .ImageTwo {
         height: 25vh;
     }
+   
 
     .SecondBlock h2 {
         margin-left: 0.5em;
     }
 
     .ComodidadesButton {
-        margin-left: 36vw;
+        width: 50vw;
+        margin-left: 25%;
+        align-self: center;
     }
 
     .ThirdBlock {
-        margin-top: 15vh;
+        margin-top: 5vh;
         height: 188vh;
     }
 
@@ -223,7 +259,7 @@ button h5 {
     }
 
     .Columna1 img {
-        width: 94vw;
+        width: 100%;
     }
 
     .Columna2 {
@@ -231,8 +267,9 @@ button h5 {
     }
 
     .Columna2 img {
-        width: 94vw;
+        width: 100%;
         padding-left: 3vw;
+        margin-top: 4px;
     }
 
     .CloseModalBtn {

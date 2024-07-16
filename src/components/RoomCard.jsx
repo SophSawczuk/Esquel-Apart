@@ -78,9 +78,12 @@ export default function RoomCard({id, name, image, image2, image3, price, charac
         {modalOpen && (
             <div className={style.ModalOverlay} >
                 <div className={style.Modal}>
+                    
                     <img src={gallery} className={style.ImageModal}/>
+                    
                     <MdArrowBackIos className={style.ArrowBack} onClick={() => {moveBack()}}/>
                     <MdArrowForwardIos className={style.ArrowFoward} onClick={() => {moveFoward()}}/>
+                    
                     <div className={style.DetailsModal}>
                         <div>
                             <RxCross1 onClick={() => {closeModal()}} className={style.CloseBtn}/>

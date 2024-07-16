@@ -31,10 +31,10 @@ export default function Home() {
             <div className={style.BlockOne}>
             <div className={style.Content}>
                 <h1 className={style.LightFont}>Disfrute sus vacaciones en <b>HOTEL PRUEBA</b></h1>
-                <p className={style.Subtitle}>Hotel ubicado en Esquel, Chubut, Argentina</p>
+                <p className={style.Subtitle}>Hotel ubicado en Chubut, Argentina</p>
                 <div className={style.ContainerList}>
-                    <div className={style.Checklist}>
-                        <AiOutlineCheck className={style.CheckIcon}/>
+                    <div className={style.Checklist} >
+                        <AiOutlineCheck className={style.CheckIcon} />
                         <p>Excelente ubicación</p>
                     </div>
                     <div className={style.Checklist}>

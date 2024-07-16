@@ -1,10 +1,10 @@
 .Wrapper {
-    height: 40vh;
+    height: fit-content;
     background-color: black;
     color:white;
     font-size: small;
-    margin-top: 10vh;
-    padding-top: 10vh;
+    /* margin-top: 10vh; */
+    padding-top: 5vh;
 }
 
 .Wrapper hr {
@@ -29,10 +29,13 @@
 }
 
 .Copyright {
-    margin-top: 20vh;
+    margin-top: 10vh;
     display: flex;
     justify-content: end;
     margin-right: 10vw;
+    padding-bottom: 2em;
+    font-style: italic;
+    color: grey;
 }
 
 
@@ -40,11 +43,17 @@
     .Wrapper {
         margin-top: 0;
         padding-top: 5vh;
-        height: 40vh;
+        height: fit-content;
     }
+   .ContainerFlex {
+    display: flex;
+    justify-content: center;
+   }
+    
     .WrapperList {
-        width: 100vw;
-        display: inline-block;
+        width: auto;
+        display:inline-block;
+        font-size: smaller;
     }
 
     .WrapperList p {
@@ -53,13 +62,16 @@
 
     .Copyright {
         margin-top: 8vh;
-        font-size: small;
+        font-size: smaller;
     }
 }
 
-@media (max-height: 780px) {
+/* @media (max-height: 780px) {
     .Wrapper {
-        height: 50vh;
+        height: fit-content;
         margin-top: 2vh;
     }
-}
+} */
+
+
+

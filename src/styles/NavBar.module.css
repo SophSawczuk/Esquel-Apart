@@ -2,9 +2,12 @@
     background-color: black;
     color: white;
     height: 10vh;
-    width: 98,5vw;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    top: 0;
 }
 h2 {
     font-weight: 800;
@@ -13,13 +16,19 @@ h2 {
 }
 .List {
     display:flex;
-    width: 40vw;
+    min-width: 600px;
     justify-content: space-around;
+}
+li {
+    font-weight: bold;
+    font-size: small;
+    list-style-type: none;
 }
 
 a {
     color:white;
     text-decoration: none;
+    align-self: center;
 }
 .Mobile {
     display: none;
@@ -31,18 +40,25 @@ a {
     }
     .Mobile {
         display: flex;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+    }
+    .LogosWrapper {
+        display: flex;
+        justify-content: space-between;
     }
     .ContainerMobile {
         background-color: black;
         color: white;
-        height: 8vh;
+        height: min-content;
         width: 100vw;
-        display:flex;
+        display: inline-block;
         justify-content: space-between;
         align-items: center;
     }
     .Burguer {
-        height: 100vh;
+        height: min-content;
         background-color: black;
     }
 

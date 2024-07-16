@@ -22,15 +22,15 @@ export default function Location() {
   });
   
   const [mapWidth, setMapWidth] = useState("60vw");
-  const [mapHeight, setMapHeight] = useState("70vh")
+  const [mapHeight, setMapHeight] = useState("100vh")
 
   useEffect(() => {
     const handleResize = () => {
       // Define el ancho del mapa según el tamaño de la ventana
-      const newWidth = window.innerWidth >= 768 ? "60vw" : "100vw";
+      const newWidth = window.innerWidth >= 768 ? "auto" : "100vw";
       setMapWidth(newWidth);
 
-      const newHeight = window.innerWidth >= 768 ? "70vh" : "100vh"
+      const newHeight = window.innerWidth >= 768 ? "90vh" : "100vh"
       setMapHeight(newHeight)
     };
     handleResize()

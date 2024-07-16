@@ -4,11 +4,11 @@
 }
 .FirstCard {
     width: 20vw;
-    height: 20vh;
+    height: fit-content;
     background-color: white;
     display: block;
     text-align: center;
-    padding: 1.5em 0 1.5em 0;
+    padding: 1.5em 0 2em 0;
     border-radius: 5%;
     box-shadow: 2px 4px 7px 3px rgba(0,0,0,0.25);
     margin-top: 4vh;
@@ -36,6 +36,10 @@
     .FirstCard h3 {
         margin-top: 0;
         margin-bottom: 0.5em;
+    }
+
+    .FirstCard p {
+        font-size: smaller;
     }
     
 }
