@@ -113,7 +113,7 @@ export default function RoomCard({id, name, image, image2, image3, price, charac
                             <h3>${price}</h3>
                             <p>/noche</p>
                         </div>   
-                        <button><Link to="/contact" ><b>Consultar disponibilidad</b></Link></button>              
+                        <Link to="/contact" ><button><b>Consultar disponibilidad</b></button></Link>              
                     </div>
                 </div>   
             </div> 

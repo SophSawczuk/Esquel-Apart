@@ -1,7 +1,6 @@
 import style from "../styles/NavBar.module.css"
 import { Link } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai"
-import { IconContext } from "react-icons";
 import { useState } from "react";
 import Burguer from "../assets/Burguer";
 import { useNavigate } from "react-router-dom";

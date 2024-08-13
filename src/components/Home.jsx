@@ -9,10 +9,14 @@ import foto2 from "../images/Foto2.jpg"
 import foto3 from "../images/Foto3.jpg"
 import React, { useState } from 'react';
 import { RxCross1 } from "react-icons/rx";
+import { useEffect } from "react"
+import Rooms from "./Rooms.jsx"
+import Contact from "./Contact.jsx"
 
 export default function Home() {
     const [modalOpen, setModalOpen] = useState(false);
     const [pic, setPic] = useState()
+    const [isPreloaded, setIsPreloaded] = useState(false);
 
     const openModal = (picture) => {
         setPic(picture)
@@ -23,6 +27,10 @@ export default function Home() {
     const closeModal = () => {
         setModalOpen(false);
     };
+    useEffect(() => {
+        // Monta habitaciones de forma invisible para precargar imágenes
+        setIsPreloaded(true);
+    }, []);
 
    
 
@@ -93,6 +101,7 @@ export default function Home() {
                     
                 </div>
             )}
+            {isPreloaded && <div style={{ display: 'none' }}><Rooms /> <Contact/></div>}
         </div>
     )
 }

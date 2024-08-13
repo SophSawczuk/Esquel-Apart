@@ -1,12 +1,13 @@
 import foto from "../images/ImageCardRoom.png"
 import foto1 from "../images/Fotito1.jpeg"
 import foto2 from "../images/Fotito2.jpeg"
+import foto3 from "../images/Foto3.jpg"
 
 export let rooms = [
     {
         'id': '1',
         'name': 'Habitación matrimonial',
-        'image': foto,
+        'image': foto3,
         'image2': foto1,
         "image3": foto2,
         'price': '100',
@@ -21,7 +22,7 @@ export let rooms = [
     {
         'id': '2',
         'name': 'Habitación matrimonial',
-        'image': foto,
+        'image': foto3,
         'image2': foto1,
         "image3": foto2,
         'price': '100',
@@ -36,7 +37,7 @@ export let rooms = [
     {
         'id': '3',
         'name': 'Habitación matrimonial',
-        'image': foto,
+        'image': foto3,
         'image2': foto1,
         "image3": foto2,
         'price': '100',
@@ -51,7 +52,7 @@ export let rooms = [
     {
         'id': '4',
         'name': 'Habitación matrimonial',
-        'image': foto,
+        'image': foto3,
         'image2': foto1,
         "image3": foto2,
         'price': '100',
@@ -66,7 +67,7 @@ export let rooms = [
     {
         'id': '5',
         'name': 'Habitación matrimonial',
-        'image': foto,
+        'image': foto3,
         'image2': foto1,
         "image3": foto2,
         'price': '100',
@@ -81,7 +82,7 @@ export let rooms = [
     {
         'id': '6',
         'name': 'Habitación matrimonial',
-        'image': foto,
+        'image': foto3,
         'image2': foto1,
         "image3": foto2,
         'price': '100',
