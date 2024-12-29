@@ -1,6 +1,8 @@
 .Wrapper {
-    margin-top: 15vh;
+    margin-top: 10vh;
     margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
 }
 .Container {
     width: auto;
@@ -11,7 +13,22 @@
    justify-items: center;
 }
 .Title {
-    margin-left: 2em;
+    margin-left: 1em;
+    margin-top: 30vh;
+    font-size: x-large;
+}
+.Description {
+    margin-left: 1.3em;
+    width: 80%;
+}
+.Video {
+    width:fit-content ;
+    height: 90vh;
+
+    /* justify-content: flex-end; /* Horizontalmente */
+  /*   height: 85vh; */
+    align-self: flex-start;     /* Verticalmente */
+    object-position: center;
 }
 
 .Card {
@@ -37,49 +54,19 @@
 }
 
 @media (max-width: 768px) {
+
     .Wrapper {
-        margin-bottom: 0;
-    }
-    .Container {
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        /* grid-gap: 3vh; */
-        column-gap: 0;
-        row-gap: 3vh;
+        display: block;
     }
 
     .Title {
-        margin-top: 1em;
-        margin-bottom: 1em;
+        margin-top: 15vh;
     }
-
-    .Card {
-        width: 40vw;
-        min-width: 100px;
-        height: 10vh;
-        margin-top: 0;
-    }
-
-    .Card h3 {
-        margin: 0.3em 0 0.3em 0;
-        font-size: small;
-    }
-
-    .Card p {
-        font-size: small;
-    }
-
-    .Icon {
-        width: 1.5em;
-        height: 1.5em;
-    }
-    .Imagen {
-        display:flex;
-        height: 25vh;
+    
+    .Video {
         width: 100%;
-        object-fit: cover;
+        height: fit-content;
         margin-top: 5vh;
-        filter: brightness(40%); 
     }
 
 }

@@ -3,6 +3,10 @@ import Swal from "sweetalert2"
 import style from "../styles/Contact.module.css"
 import { FaWhatsapp } from "react-icons/fa";
 import emailjs from '@emailjs/browser';
+import { Link } from "react-router-dom";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaRegEnvelope } from "react-icons/fa";
 
 
 export default function Contact() {
@@ -47,7 +51,7 @@ export default function Contact() {
             }) 
         }
         else{
-            emailjs.sendForm('service_7zvshge', 'template_h6e4l0o', e.target, 'Rc4HvkwJmlJbyGBKL' )
+            emailjs.sendForm('service_x9qa78n', 'template_i858qck', e.target, 'qqNBv-ncC62HiS998' )
                 .then(response => console.log(response))
                 .catch(error => console.log(error))
 
@@ -124,22 +128,22 @@ export default function Contact() {
                     <div className={style.WrapperIcons}>
                         <div className={style.Block}>
                             <FaWhatsapp className={style.Icon}/>
-                            <p>+54 (223) 504-7367</p>
+                            <Link to="https://api.whatsapp.com/send?phone=5492945689219" target="_blank" rel="noopener noreferrer"><p>+54 9 2945 68 9219</p></Link>
                         </div>
                         <div className={style.Block}>
-                            <FaWhatsapp className={style.Icon}/>
-                            <p>+54 (223) 504-7367</p>
+                            <FaRegEnvelope className={style.Icon}/>
+                            <p>contacto@esquelapart.com.ar</p>
                         </div>
                         <div className={style.Block}>
-                            <FaWhatsapp className={style.Icon}/>
-                            <p>+54 (223) 504-7367</p>
+                            <FaFacebook className={style.Icon}/>
+                            <Link to="https://web.facebook.com/Esquelapart/?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer"><p>Esquel Apart</p></Link>
                         </div>
                         <div className={style.Block}>
-                            <FaWhatsapp className={style.Icon}/>
-                            <p>+54 (223) 504-7367</p>
+                            <FaInstagram className={style.Icon}/>
+                            <Link to="https://www.instagram.com/esquelapart/" target="_blank" rel="noopener noreferrer"><p>esquelapart</p></Link>
                         </div>
                     </div>
-                    <p className={style.Reminder}>Consultanos sobre disponibilidad o cualquier otra consulta que tengas. Recuerda especificar fecha y cantidad de personas.</p>
+                    <p className={style.Reminder}>Dejanos tu consulta y te responderemos a la brevedad.</p>
                 </div>
             </div>
             

@@ -1,15 +1,42 @@
 .Container {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5vh;
     justify-items: center;
-    margin: 5vh 5vw 10vh 5vw;
+    margin: 10vh 5vw 20vh 2vw;
+    position: relative;
 }
 .Title {
     /* display: none; */
-    margin: 15vh 0 0 2em;
+    margin: 20vh 0 0 0;
 }
+.TextContainer{
+    position: relative;
+}
+.Image {
+    width: 30vw;
+    height: 45vh;
+    filter: brightness(50%);
+}
+
+.Image:hover {
+    filter: brightness(25%);
+}
+
+.Text {
+    position: absolute;
+    top: 50%; /* Centra el texto verticalmente */
+    left: 50%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta el centro exacto */
+    color: white; /* Color del texto */
+    z-index: 1;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+
+
 
 @media (max-width: 768px) {
     .Container {
@@ -20,6 +47,13 @@
     .Title {
         display: flex;
         margin-bottom: 1em;
+        margin-top: 15vh;
+        margin-left: 0.8em;
+        width: 80vw;
+    }
+
+    .Image {
+        width: 80vw;
     }
 }
 

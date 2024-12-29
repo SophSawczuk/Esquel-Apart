@@ -1,6 +1,6 @@
 .BlockOne {
     display: flex;
-    height: 90vh;
+    height: fit-content;
     padding-top: 10vh;
 }
 
@@ -24,13 +24,18 @@
     display: flex;
 }
 
+.FontColor {
+    color:#A79E1E;
+}
+
 .Checklist p {
     margin: 0.5em 0 0 0;
 }
 
 .CheckIcon {
-    margin: 0.5em 1em 0em 0;
-    color: green;
+    margin: 0 0.5em 0em 0;
+    color: #A79E1E;
+    font-size: 40px;
 }
 
 .Image {
@@ -49,7 +54,8 @@ button {
 	line-height: 1.5;
 	border-radius: .50rem;
 	color: #fff;
-	background-color: #318100;
+	/* background-color: #318100; */
+    background-color: #A79E1E;
     margin-top: 5vh;
 }
 .ButtonAvailability {
@@ -83,13 +89,13 @@ button h5 {
     .ImageTwo {
         height: 100%;
       object-fit: cover;
-      object-position: center bottom;
+      object-position: center above;
       width: auto;
     }
 }
 
 .SecondBlock {
-    height: 100%;
+    height: fit-content;
 }
 
 .ImageTwo {
@@ -115,12 +121,12 @@ button h5 {
 	color: #fff;
 	background-color: #000000;
     margin-top: 5vh;
-    margin-left: 46vw;
+    margin-left: 42vw;
     margin-bottom: 5vh;
 }
 
 .ThirdBlock {
-    height: 100vh;
+    height: fit-content;
 }
 
 .Fotos {
@@ -129,6 +135,7 @@ button h5 {
     justify-content: space-between;
 }
 
+/* Galeria de fotos  */
 .Columna1 {
     width: 50vw;
     height: 90vh;
@@ -152,6 +159,34 @@ button h5 {
     cursor: pointer;
 }
 
+
+/* Galeria de fotos del reves */
+.Columna1Reves {
+    width: 50vw;
+}
+
+.Columna1Reves img{
+    width: 46vw;
+    height: 90vh;
+    cursor: pointer;
+    padding-left: 3vw;
+    padding-right: 4px;
+    object-fit: cover;
+}
+
+.Columna2Reves {
+    width: 50vw;
+    height: 90vh;
+}
+
+.Columna2Reves img {
+    width: 46vw;
+    height: 44.8vh;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+
 /* MODAL */
 .ModalOverlay {
     position: fixed;
@@ -164,7 +199,16 @@ button h5 {
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
     z-index: 9999; /* Asegura que esté por encima del resto del contenido */
+    object-fit: contain;
+}
 
+.ModalOverlay img {
+    max-width: 100%; /* Imagen nunca será más ancha que el contenedor */
+    max-height: 100%; /* Imagen nunca será más alta que el contenedor */
+    width: auto; /* Mantiene proporción al escalar horizontalmente */
+    height: auto; /* Mantiene proporción al escalar verticalmente */
+    border-radius: 5px; /* Opcional: esquinas redondeadas */
+    object-fit: contain; /* Asegura que toda la imagen se vea sin recortes */
 }
 
 .CloseModalBtn {
@@ -180,6 +224,7 @@ button h5 {
     .BlockOne {
         display: block;
         padding-top: 9vh;
+        height: 100vh;
     }
     .Content {
         position: absolute;
@@ -197,7 +242,8 @@ button h5 {
 
     .Subtitle {
         /* color: #292929; */
-        color: rgb(30, 30, 30);
+        /* color: rgb(30, 30, 30); */
+        color: #ffffff;
     }
 
     .ContainerList {
@@ -218,7 +264,7 @@ button h5 {
         width: 100%;
         overflow: hidden;
         object-fit: cover;
-        height: 90vh;
+        height: 100vh;
         z-index: -1;
     }
 
@@ -247,7 +293,7 @@ button h5 {
 
     .ThirdBlock {
         margin-top: 5vh;
-        height: 188vh;
+        height: fit-content;
     }
 
     .Fotos {
@@ -267,6 +313,24 @@ button h5 {
     }
 
     .Columna2 img {
+        width: 100%;
+        padding-left: 3vw;
+        margin-top: 4px;
+    }
+
+    .Columna1Reves {
+        width: 100%;
+    }
+
+    .Columna1Reves img {
+        width: 100%;
+    }
+
+    .Columna2Reves {
+        width: 100%;
+    }
+
+    .Columna2Reves img {
         width: 100%;
         padding-left: 3vw;
         margin-top: 4px;

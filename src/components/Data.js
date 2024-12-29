@@ -6,7 +6,7 @@ import foto3 from "../images/Foto3.jpg"
 export let rooms = [
     {
         'id': '1',
-        'name': 'Habitación matrimonial',
+        'name': 'CASA',
         'image': foto3,
         'image2': foto1,
         "image3": foto2,
@@ -21,7 +21,7 @@ export let rooms = [
     },
     {
         'id': '2',
-        'name': 'Habitación matrimonial',
+        'name': 'DUPLEX',
         'image': foto3,
         'image2': foto1,
         "image3": foto2,
@@ -36,7 +36,7 @@ export let rooms = [
     },
     {
         'id': '3',
-        'name': 'Habitación matrimonial',
+        'name': 'LOFT',
         'image': foto3,
         'image2': foto1,
         "image3": foto2,
@@ -49,50 +49,6 @@ export let rooms = [
             'heating': 'calefacción',
         }
     },
-    {
-        'id': '4',
-        'name': 'Habitación matrimonial',
-        'image': foto3,
-        'image2': foto1,
-        "image3": foto2,
-        'price': '100',
-        'characteristics': {
-            'detail': 'Vista al lago',
-            'internet': 'Wi-Fi libre y gratuito',
-            'sheets': 'Servicio de sábanas',
-            'breakfast' : 'Desayuno incluido',
-            'heating': 'calefacción',
-        }
-    },
-    {
-        'id': '5',
-        'name': 'Habitación matrimonial',
-        'image': foto3,
-        'image2': foto1,
-        "image3": foto2,
-        'price': '100',
-        'characteristics': {
-            'detail': 'Vista al lago',
-            'internet': 'Wi-Fi libre y gratuito',
-            'sheets': 'Servicio de sábanas',
-            'breakfast' : 'Desayuno incluido',
-            'heating': 'calefacción',
-        }
-    },
-    {
-        'id': '6',
-        'name': 'Habitación matrimonial',
-        'image': foto3,
-        'image2': foto1,
-        "image3": foto2,
-        'price': '100',
-        'characteristics': {
-            'detail': 'Vista al lago',
-            'internet': 'Wi-Fi libre y gratuito',
-            'sheets': 'Servicio de sábanas',
-            'breakfast' : 'Desayuno incluido',
-            'heating': 'calefacción',
-        }
-    }
+    
 ]
 

@@ -8,13 +8,13 @@ export default function Footer() {
             <div className={style.ContainerFlex}>
                 <div className={style.WrapperList}>
                     <Link to="/"><p>Inicio</p></Link>
-                    <Link to="/rooms"><p>Habitaciones</p></Link>
-                    <Link to="/amenities"><p>Comodidades</p></Link>
-                    <Link to="/location"><p>Cómo llegar</p></Link>
-                    <Link to="/contact"><p>Contacto</p></Link>
+                    <Link to="/hospedaje"><p>Hospedaje</p></Link>
+                    <Link to="/actividades"><p>¿Qué hacer en Esquel?</p></Link>
+                    <Link to="/ubicacion"><p>Ubicación</p></Link>
+                    <Link to="/contacto"><p>Contacto</p></Link>
                 </div>
             </div>
-            <p className={style.Copyright}>@2024 Mountains Development</p>
+            <Link to="https://mountains-development.netlify.app/" target="_blank" rel="noopener noreferrer"><p className={style.Copyright}>@2024 Mountains Development</p></Link>
         </div>
     )
 }

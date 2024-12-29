@@ -3,39 +3,54 @@
     justify-content: space-around;
 }
 .FirstCard {
-    width: 20vw;
+    width: 25vw;
     height: fit-content;
     background-color: white;
     display: block;
-    text-align: center;
-    padding: 1.5em 0 2em 0;
+    text-align: start;
+    padding: 1.5em 2em 2em 2em;
     border-radius: 5%;
     box-shadow: 2px 4px 7px 3px rgba(0,0,0,0.25);
     margin-top: 4vh;
+    
+}
+
+.FirstCard h3 {
+    font-size: x-large !important; 
+    margin-top: 2em;
+}
+
+.FirstCard li {
+    font-weight:300;
+    padding-bottom: 1em;
+    padding-left: 0 !important;
+    text-align: justify;
+    color: rgb(54, 54, 54);
 }
 
 .Icon {
-    width: 2em;
-    height: 2em;
+    width: 3em;
+    height: 3em;
 }
 
 @media (max-width: 768px) {
     .Container {
-        display: grid;
+        display: block;
         grid-template-rows: 1fr 1fr ;
         grid-template-columns: 1fr 1fr;
         row-gap: 3vh;
         margin-left: 1.5em;
     }
     .FirstCard {
-        width: 40vw;
-        height: 10vh;
+        width: 80%;
+        height: fit-content;
         margin-top: 0;
+        margin-bottom: 2em;
     }
 
     .FirstCard h3 {
-        margin-top: 0;
-        margin-bottom: 0.5em;
+        margin-top: 1em;
+        margin-bottom: 2em;
     }
 
     .FirstCard p {

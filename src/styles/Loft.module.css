@@ -1,0 +1,108 @@
+.Wrapper {
+    display: flex;
+    margin-top: 10vh;
+}
+
+.TextContainer {
+    position: relative;
+}
+
+.Title {
+    position: absolute;
+    top: 15%; /* Centra el texto verticalmente */
+    left: 20%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta el centro exacto */
+    color: white; /* Color del texto */
+    z-index: 1;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.Items {
+    position: absolute;
+    top:55%; /* Centra el texto verticalmente */
+    left: 40%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta el centro exacto */
+    color: white; /* Color del texto */
+    z-index: 1;
+}
+
+.Item {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.Item p {
+    padding-left: 1em;
+}
+
+
+.Image {
+    width: 50vw;
+    height: 100vh;
+    filter: brightness(25%);
+}
+
+.Paragraph {
+    width: 50%;
+    padding: 0 5vw 0 5vw;
+    margin-top: 15vh;
+}
+
+.SecondBlock {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr; /* Define 2 filas de igual altura */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Define 3 columnas de igual ancho */
+    gap: 10px; /* Espacio entre las imágenes */
+    place-items: center; /* Centra contenido horizontal y verticalmente */
+    width: 80vw;
+    margin-left: 10vw;
+    position: absolute;
+    top: 100vh;
+}
+
+.Foto {
+    height: 25vh;
+    width: 20vw;
+    object-fit: cover;
+}
+.Foto:hover {
+    cursor: pointer;
+}
+.ThirdBlock {
+    height: 20vh;
+    padding-top: 50vh;
+}
+
+/* MODAL */
+.ModalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    z-index: 9999; /* Asegura que esté por encima del resto del contenido */
+    object-fit: contain;
+}
+
+.ModalOverlay img {
+    max-width: 100%; /* Imagen nunca será más ancha que el contenedor */
+    max-height: 100%; /* Imagen nunca será más alta que el contenedor */
+    width: auto; /* Mantiene proporción al escalar horizontalmente */
+    height: auto; /* Mantiene proporción al escalar verticalmente */
+    border-radius: 5px; /* Opcional: esquinas redondeadas */
+    object-fit: contain; /* Asegura que toda la imagen se vea sin recortes */
+}
+
+.CloseModalBtn {
+    position:absolute;
+   top: 1em;
+   right: 1em;
+   font-size: 3em;
+   color: white;
+   cursor: pointer;
+}

@@ -6,6 +6,7 @@ import {
   useLoadScript,
 } from "@react-google-maps/api";
 import style from "../styles/Location.module.css"
+import Loader from 'react-loaders'
 
 
 
@@ -13,8 +14,8 @@ export default function Location() {
   const markers = 
     {
       id: 1,
-      name: "Hotel de prueba",
-      position: { lat: -38.00213048826891, lng: -57.55647513283969 },
+      name: "Esquel Apart",
+      position: { lat: -42.9070596, lng: -71.306424 },
     }
 
   const { isLoaded } = useLoadScript({
@@ -45,14 +46,14 @@ export default function Location() {
   return (
     <div className={style.Container}>
       <div className={style.WrapperInfo}>
-        <h3>Cómo llegar</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius impedit molestiae repellat amet sit at itaque? Porro blanditiis labore, nulla eveniet animi quis nobis quo minus, ad asperiores hic minima.</p>
+        <h3>Ubicación</h3>
+        <p>Nuestro alojamiento está ubicado en <b>Almafuerte 2349, Esquel, Chubut, Argentina</b>, en un entorno tranquilo y a poca distancia de algunos de los principales atractivos de la región. Nos encontramos cerca de la Laguna La Zeta, el Centro de Esquí La Hoya, y del Parque Nacional Los Alerces, reconocido por su belleza natural y su increíble biodiversidad. A solo minutos del centro, tendrás acceso rápido a restaurantes, tiendas y servicios locales.</p>
       </div>
       <div /* style={{ height: "90vh", width: "100%" }} */ className={style.WrapperMap}>
         {isLoaded ? (
           <GoogleMap
-            center={{ lat: -38.00213048826891, lng: -57.55647513283969 }}
-            zoom={12}
+            center={{ lat: -42.9070596, lng: -71.306424 }}
+            zoom={14}
             mapContainerStyle={{ width: mapWidth, height: mapHeight }}
           >
             <MarkerF
@@ -68,7 +69,8 @@ export default function Location() {
           </GoogleMap>
         ) : 
           <div> 
-            <h1>Cargando...</h1>
+            {/* <h1>Cargando mapa...</h1> */}
+            <Loader type="ball-pulse" />
           </div>
           
           }

@@ -1,5 +1,6 @@
 .Desktop {
-    background-color: black;
+  /*   background-color:black; */
+    background-color:#000000;
     color: white;
     height: 10vh;
     width: 100vw;
@@ -18,6 +19,7 @@ h2 {
     display:flex;
     min-width: 600px;
     justify-content: space-around;
+    padding-right: 1em;
 }
 li {
     font-weight: bold;
@@ -32,6 +34,13 @@ a {
 }
 .Mobile {
     display: none;
+}
+
+.Logo {
+/*     width: 12vh; */
+    width: 16vh;
+    margin-left: 0.5em;
+    margin-top: 2.5em;
 }
 
 @media (max-width: 768px) {

@@ -1,44 +1,19 @@
 import style from "../styles/Comodidades.module.css"
 import {AiOutlineWifi} from "react-icons/ai"
 import foto2 from "../images/Foto2.jpg"
+import esquel from "../images/atractivos-de-esquel.mp4"
 
 export default function Comodidades() {
     return(
         <div className={style.Wrapper}>
-            <h3 className={style.Title}>Comodidades</h3>
-            <div className={style.Container}>
-                <div className={style.Card}>
-                    <AiOutlineWifi className={style.Icon}/>
-                    <h3>Wifi</h3>
-                    <p><i>Libre y gratuito</i></p>
-                </div>
-                <div className={style.Card}>
-                    <AiOutlineWifi className={style.Icon}/>
-                    <h3>Wifi</h3>
-                    <p><i>Libre y gratuito</i></p>
-                </div>
-                <div className={style.Card}>
-                    <AiOutlineWifi className={style.Icon}/>
-                    <h3>Wifi</h3>
-                    <p><i>Libre y gratuito</i></p>
-                </div>
-                <div className={style.Card}>
-                    <AiOutlineWifi className={style.Icon}/>
-                    <h3>Wifi</h3>
-                    <p><i>Libre y gratuito</i></p>
-                </div>
-                <div className={style.Card}>
-                    <AiOutlineWifi className={style.Icon}/>
-                    <h3>Wifi</h3>
-                    <p><i>Libre y gratuito</i></p>
-                </div>
-                <div className={style.Card}>
-                    <AiOutlineWifi className={style.Icon}/>
-                    <h3>Wifi</h3>
-                    <p><i>Libre y gratuito</i></p>
-                </div>
+            <div>
+                <h1 className={style.Title}>¿Qué hacer en Esquel?</h1>
+                <p className={style.Description}>Dale play al video para descubrir lugares imperdibles y las mejores actividades que puedes realizar en Esquel.</p>
             </div>
-            <img src={foto2} className={style.Imagen}/>
+            
+            <video className={style.Video} width="100%" height="65%" controls>
+                        <source src={esquel} type="video/mp4"/>
+            </video>
         </div>
     )
 }
