@@ -13,13 +13,13 @@ export default function NavBar() {
     const navigate = useNavigate();
 
     const menuClosed = <AiOutlineMenu
-                    style={{"color": "white", paddingRight: "5vw", "width": "1.5em", "height":"1.5em", marginTop: "3vh"}}
+                    style={{"color": "white", paddingRight: "5vw", "width": "20px", "height":"20px", marginTop: "3vh", paddingLeft: "90vw"}}
                     onClick={() => setOpen(!open)}
                 />
     const menuOpen = 
             <div>
               <AiOutlineMenu
-                style={{"color": "white", paddingRight: "5vw", "width": "1.5em", "height":"1.5em", "alignSelf":"center", marginTop: "3vh"}}
+                style={{"color": "white", paddingRight: "5vw", "width": "1.2em", "height":"1.2em", "alignSelf":"center", marginTop: "3vh", paddingLeft: "90vw"}}
                 onClick={() => setOpen(!open)}
                 />
                 

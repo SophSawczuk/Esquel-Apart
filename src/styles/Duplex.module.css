@@ -109,3 +109,50 @@
    color: white;
    cursor: pointer;
 }
+
+
+@media (max-width: 768px) {
+    .Wrapper {
+        display: inline-block;
+    }
+    .TextContainer {
+        width: 100vw;
+    }
+    .Image {
+        width: 100vw;
+        height: 110vh;
+        object-fit: cover;
+        
+    }
+    .Title {
+        top: 8vh;
+        left: 35%;
+    }
+
+    .Items {
+        top: 60vh;
+        width: 90%;
+        left: 50%;
+    }
+
+    .SecondBlock {
+        grid-template-rows: 1fr 1fr 1fr 1fr; /* Define 2 filas de igual altura */
+        grid-template-columns: 1fr 1fr; /* Define 3 columnas de igual ancho */
+        margin-left: 4vw;
+        margin-top: 15vh;
+    }
+
+    .Foto {
+        width: 45vw;
+    }
+
+    .Paragraph {
+        margin-top: 105vh;
+        width: 90%;
+        text-align: justify;
+    }
+
+    .ThirdBlock {
+        padding-top: 0;
+    }
+}

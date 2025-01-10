@@ -7,8 +7,10 @@
    /*  margin-top: 45vh; */
     text-align: center;
     z-index: 3;
+    margin-top: -1px;
 }
 
 .Container h5 {
     padding: 0.4em 0 0.4em 0;
+    font-weight: lighter;
 }

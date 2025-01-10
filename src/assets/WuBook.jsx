@@ -1,21 +1,26 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 
-export default function WuBook() {
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.src = "https://wubook.net/js/nebk/bwidget.jgz";
-        script.className = "kas_online_reception";
-        script.setAttribute("data-wid", "67e8b843-1da8-4fed-abfc-dd1ec4e10957");
-        document.body.appendChild(script);
+const ReceptionWidget = () => {
+  useEffect(() => {
+    // Crear la etiqueta <script>
+    const script = document.createElement("script");
+    script.className = "kas_online_reception";
+    script.src = "https://wubook.net/js/nebk/bwidget.jgz";
+    script.dataset.wid = "eeec0ba1-376c-4469-8ecb-3618da123aa5";
+    script.async = true;
 
-        return () => {
-            document.body.removeChild(script);
-        };
-    }, []);
-    
-    return(
-        <div>
-            <p>Reserva</p>
-        </div>
-    )
-}
+    // Agregarlo al <body> o a un contenedor específico
+    document.body.appendChild(script);
+
+    // Limpiar el script cuando el componente se desmonta
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  return <div className="kas_online_reception"></div>;
+};
+
+export default ReceptionWidget;
+
+

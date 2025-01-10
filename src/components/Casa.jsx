@@ -3,7 +3,9 @@ import style from "../styles/Casa.module.css"
 import { AiOutlineCheck } from "react-icons/ai"
 import { RxCross1 } from "react-icons/rx";
 import { useState } from "react"
-import WuBook from "../assets/WuBook"  /* <--- motor de reservas */
+
+import WuBookWidget from "../assets/WuBook.jsx";
+import ReceptionWidget from "../assets/WuBook.jsx";
 
 /*------ Imagenes ------*/
 import image1 from "../images/casa-baño.jpg"
@@ -95,7 +97,8 @@ export default function Casa(){
                 <img src={image8} className={style.Foto} onClick={() => {openModal(image8)}}/>
             </div>
             <div className={style.ThirdBlock}>
-                
+            <div className="kas_online_reception" src="https://wubook.net/nneb/bk?f=today&n=1&ep=93a48372&o=1.0.0.0"></div>
+            <ReceptionWidget/>
             </div>
             {modalOpen && (
                                         <div className={style.ModalOverlay}>

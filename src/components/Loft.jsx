@@ -3,7 +3,7 @@ import style from "../styles/Loft.module.css"
 import { AiOutlineCheck } from "react-icons/ai"
 import { RxCross1 } from "react-icons/rx";
 import { useState } from "react"
-import WuBook from "../assets/WuBook"  /* <--- motor de reservas */
+
 
 /*------ Imagenes ------*/
 import image1 from "../images/loft-cocina.jpg"

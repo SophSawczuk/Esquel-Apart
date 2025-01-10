@@ -14,6 +14,7 @@ import Rooms from "./Rooms.jsx"
 import Contact from "./Contact.jsx"
 import Loft from "../images/loft.jpg"
 import Duplex from "../images/Duplex.png"
+import BookingWidget from "../assets/WuBook.jsx"
 
 /* -------- Imágenes ---------- */
 import galeria1 from "../images/desayuno.jpg"
@@ -101,6 +102,8 @@ export default function Home() {
             <div >
                 <img src={Loft} alt="Vista de la laguna La Zeta, Esquel." className={style.Image}/>
             </div>
+            
+
             </div>
 
             <div className={style.SecondBlock}>
