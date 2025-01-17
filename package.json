@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://esquelapart.com.ar/",
+ 
+  "homepage": "https://sophsawczuk.github.io/Esquel-Apart",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
