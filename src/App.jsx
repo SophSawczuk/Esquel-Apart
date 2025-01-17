@@ -20,8 +20,8 @@ function App() {
       <ScrollToTop/>
       <WhatsAppIcon/>
       <Routes>
-        <Route exact path="/" element={<Home/>}/>
-        <Route path="/actividades" element={<Comodidades/>}/>
+       {/*  <Route exact path="/" element={<Home/>}/> */}
+        <Route path="/Esquel-Apart/actividades" element={<Comodidades/>}/>
         <Route path="/hospedaje" element={<Rooms/>}/>
         <Route path="/contacto" element={<Contact/>}/>
         <Route path="/ubicacion" element={<Location/>}/>
