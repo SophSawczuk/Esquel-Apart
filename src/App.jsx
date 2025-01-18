@@ -28,7 +28,7 @@ function App() {
         <Route path="/casa" element={<Casa/>}/>
         <Route path="/duplex" element={<Duplex/>}/>
         <Route path="/loft" element={<Loft/>}/>
-       {/*  <Route exact path= "/Esquel-Apart" element={<Home/>} /> */}
+
       </Routes>
       <Footer/>
     </>
