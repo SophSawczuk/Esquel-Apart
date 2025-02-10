@@ -52,6 +52,7 @@ a {
         position: fixed;
         z-index: 3;
         top: 0;
+
     }
     .LogosWrapper {
         display: flex;
@@ -76,7 +77,7 @@ a {
         margin-top: 1em;
         position: absolute;
         z-index: 4;
-        width: 20vw;
+        width: 80px;
     }
 }
 

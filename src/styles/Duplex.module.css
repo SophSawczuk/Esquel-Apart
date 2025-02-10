@@ -40,7 +40,7 @@
 
 .Image {
     width: 50vw;
-    height: 100vh;
+    height: 110vh;
     filter: brightness(25%);
 }
 
@@ -59,7 +59,7 @@
     width: 80vw;
     margin-left: 10vw;
     position: absolute;
-    top: 100vh;
+    top: 110vh;
 }
 
 .Foto {
@@ -111,7 +111,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 999px) {
     .Wrapper {
         display: inline-block;
     }
@@ -125,8 +125,8 @@
         
     }
     .Title {
-        top: 8vh;
-        left: 35%;
+        top: 10vh;
+        left: 140px;
     }
 
     .Items {
@@ -154,5 +154,21 @@
 
     .ThirdBlock {
         padding-top: 0;
+    }
+}
+
+@media (1300px > width > 1000px) {
+    .Title {
+        top: 6vh;
+    }
+    .Items {
+        top:53vh;
+        left: 25vw;
+        width: 90%;
+    }
+
+    .Paragraph {
+        margin-top: 10vh;
+        padding: 0 3vw 0 3vw;
     }
 }

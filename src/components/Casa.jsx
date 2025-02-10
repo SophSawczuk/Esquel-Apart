@@ -75,15 +75,17 @@ export default function Casa(){
                     </div>
                 </div>
                 <div className={style.Paragraph}>
-                    <p>Nuestros acogedores Departamentos tipo loft son ideales para <b>2 adultos y 2 menores o bien 3 adultos</b> y se encuentran ubicados en la entrada de la encantadora ciudad de Esquel.</p>
+                    <p>Con capacidad para alojar hasta 6 huéspedes, se encuentra ubicada en el pintoresco faldeo de la montaña y a sólo 7 cuadras del centro de Esquel, está completamente equipada para su comodidad.</p>
                     <br/>
-                    <p>En la planta baja, encontrará un amplio espacio con comedor y sala de estar, equipado con TV para relajarse después de un día de aventuras. Además, encontrará una cómoda cama marinera y una cocina completamente equipada con todo lo que necesita para que su estadía sea ideal.</p>
+                    <p>Cuenta con dos habitaciones, donde encontrará colchones y somieres de máximo confort para garantizar un descanso reparador.                    </p>
                     <br/>
-                    <p>En la planta alta dispondrá de un elegante y acogedor dormitorio, con la opción de una cama matrimonial o dos camas individuales, todas con colchones y somieres de la más alta calidad garantizando el máximo confort. Además, cada loft cuenta con cajas de seguridad individuales para su tranquilidad.</p>
+                    <p>Además, posee un amplio estar-comedor para relajarse y disfrutar de momentos inolvidables contemplando el fueguito de leñero para el cual le proveemos leña durante toda su estadía.</p>
                     <br/>
-                    <p>Posee estacionamiento frente a cada departamento y seguridad reforzada con alarma y videocámaras.</p>
+                    <p>La calefacción por losa radiante, garantiza la buena temperatura durante toda su estadía. Cuenta con Wi-Fi de alta velocidad, 20 canales de TV HD con TDA (Televisión Digital Abierta) y la opción de Direct TV (prepago optativo).                    </p>
                     <br/>
-                    <p>Además, tendrá acceso exclusivo a nuestro quincho con parrilla, donde podrá disfrutar de deliciosos asados sin costo adicional, solo con hacer su reserva previa.</p>
+                    <p>Con seguridad reforzada por alarma y caja de seguridad, así como una cochera exclusiva para 1 o 2 vehículos, cada detalle ha sido pensado para su tranquilidad.</p>
+                    <br/>
+                    <p>La unidad cuenta también con parrilla exterior para sus reuniones al aire libre y un hermoso y exclusivo jardín.</p>
                 </div>
             </div>
             <div className={style.SecondBlock}>

@@ -6,7 +6,7 @@ export default defineConfig({
   build: {
     outDir: "build"
   },
-  base: '/Esquel-Apart/',
+  base: '/',
   plugins: [
     react()
   ]
